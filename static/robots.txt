@@ -3,7 +3,7 @@ sitemap: /sitemap.xml
 User-agent: *
 Disallow: /de/impressum/
 Disallow: /de/404/
-Disallow: /de/datenschutzerklärung/
+Disallow: /de/dsgvo/
 Disallow: /en/imprint/
 Disallow: /en/404/
-Disallow: /en/privacy-statement/
+Disallow: /en/dsgvo/
