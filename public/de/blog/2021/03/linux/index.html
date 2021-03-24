@@ -20,13 +20,13 @@ drwxr-xr-x 2 thinegen thinegen 4096 Mar 21 18:48 static
  rwx r-x r-x
       |
     Gruppe
-</code></pre><p>In diesem Fall darf der Nutzer also lesen, schreiben und das Verzeichnis betreten, während die Mitglieder der Gruppe und alle anderen nur lesen und das Verzeichnis betretens dürfen.</p><p>Eine andere oft benutze Art Rechte zu schreiben ist die Umrechnung in das Oktalsystem<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>. Hierfür addiert man die Werte der Rechte (<code>r=4</code>, <code>w=2</code>, <code>x=1</code>) im Oktalsystem:</p><pre><code>rwx r-x r-x
+</code></pre><p>In diesem Fall darf der Nutzer also lesen, schreiben und das Verzeichnis betreten, während die Mitglieder der Gruppe und alle anderen nur lesen und das Verzeichnis betreten dürfen.</p><p>Eine andere oft benutze Art Rechte zu schreiben ist die Umrechnung in das Oktalsystem<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>. Hierfür addiert man die Werte der Rechte (<code>r=4</code>, <code>w=2</code>, <code>x=1</code>) im Oktalsystem:</p><pre><code>rwx r-x r-x
 421 4 1 4 1
  7   5   5
 </code></pre><p>Wenn der Nutzer alles und andere nur lesen und ausführen dürfen, lauten die Berechtigungen also <code>755</code>.</p><p>Für Dateien und Verzeichnisse ist meistens die Berechtigung <code>644</code> geeignet:</p><pre><code> 6  4  4
 42 4  4
 rw-r--r--
-</code></pre><h3 id=versteckte-dateien><a href=#versteckte-dateien>Versteckte Dateien</a></h3><p>Auf Linux kann man Dateien verstecken, wenn man ihnen einen Punkt voranstellt. Der Befehl <code>ls -la</code> gibt beispielsweise Folgendes zurück:</p><pre><code>total 52
+</code></pre><p>Für den Root-Benutzer gelten keine Einschränkungen. Er kann alle Dateien lesen oder ändern.</p><h3 id=versteckte-dateien><a href=#versteckte-dateien>Versteckte Dateien</a></h3><p>Auf Linux kann man Dateien verstecken, wenn man ihnen einen Punkt voranstellt. Der Befehl <code>ls -la</code> gibt beispielsweise Folgendes zurück:</p><pre><code>total 52
 drwxr-xr-x 11 thinegen thinegen 4096 Mar 24 15:11 .
 drwx------ 23 thinegen thinegen 4096 Mar 24 13:00 ..
 drwxr-xr-x  2 thinegen thinegen 4096 Mar 21 18:48 archetypes
