@@ -48,7 +48,7 @@ Bei relativen Pfaden gibt es Besonderheiten: Ein Punkt referenziert das aktuelle
 
 Dateien und Ordner haben Einstellungen zur Berechtigung. Diese kann man sich mit ```ls -l``` (s. unten) anzeigen lassen. Die Ausgabe könnte so aussehen wie:
 
-~~~
+{{< highlight Bash >}}
 total 32
 drwxr-xr-x 2 thinegen thinegen 4096 Mar 21 18:48 archetypes
 drwxr-xr-x 5 thinegen thinegen 4096 Mar 21 18:48 assets
@@ -58,24 +58,26 @@ drwxr-xr-x 2 thinegen thinegen 4096 Mar 24 15:11 i18n
 drwxr-xr-x 6 thinegen thinegen 4096 Mar 21 18:48 layouts
 drwxr-xr-x 3 thinegen thinegen 4096 Mar 21 18:50 resources
 drwxr-xr-x 2 thinegen thinegen 4096 Mar 21 18:48 static
-~~~
+{{< /highlight >}}
 
-Die einzelnen Felder ergeben sich wie folgt:
+```total``` beschreibt die Anzahl der belegten Blöcke[^Block] im Dateisystem. Die anderen Felder ergeben sich wie folgt:
 
-~~~
+[^Block]: s. [Wikipedia](https://de.wikipedia.org/wiki/Datenblock)
+
+{{< highlight Bash >}}
 Berechtigungen Nutzer   Gruppe Größe              Name
      |           |        |      |                 |
 drwxr-xr-x 2 thinegen thinegen 4096 Mar 21 18:48 static
            |                               |
     Anzahl Hardlinks                letzte Änderung
-~~~
+{{< /highlight >}}
 
-[^2] Das ```d``` am Anfang zeigt an, das es sich um ein Verzeichnis (directory) handelt. Die Größe eines Verzeichnisses ist aber nicht die Summe aller enthaltenen Dateien und Verzeichnisse, sondern nur die Größe der Information über das Verzeichnis selbst (z.B. Datum der letzten Änderung o.ä.).
+[^2] Das **```d```** am Anfang zeigt an, das es sich um ein Verzeichnis (directory) handelt. Die Größe eines Verzeichnisses ist aber nicht die Summe aller enthaltenen Dateien und Verzeichnisse, sondern nur die Größe der Information über das Verzeichnis selbst (z.B. Datum der letzten Änderung o.ä.).
 
 Es gibt drei Rechte:
-- das Leserecht: ```r``` (read)
-- das Schreibrecht: ```w``` (write)
-- das Ausführungsrecht: ```x``` (execute)
+- das Leserecht: **```r```** (read)
+- das Schreibrecht: **```w```** (write)
+- das Ausführungsrecht: **```x```** (execute)
     - für Verzeichnisse: Recht das Verzeichnis zu betreten
 
 Um die Rechte auszulesen teilt man sie in Dreier-Gruppen auf:
@@ -120,7 +122,7 @@ Für den Root-Benutzer gelten keine Einschränkungen. Er kann alle Dateien lesen
 
 Auf Linux kann man Dateien verstecken, wenn man ihnen einen Punkt voranstellt. Der Befehl ```ls -la``` gibt beispielsweise Folgendes zurück:
 
-~~~
+{{< highlight Bash >}}
 total 52
 drwxr-xr-x 11 thinegen thinegen 4096 Mar 24 15:11 .
 drwx------ 23 thinegen thinegen 4096 Mar 24 13:00 ..
@@ -135,7 +137,7 @@ drwxr-xr-x  2 thinegen thinegen 4096 Mar 24 15:11 i18n
 drwxr-xr-x  6 thinegen thinegen 4096 Mar 21 18:48 layouts
 drwxr-xr-x  3 thinegen thinegen 4096 Mar 21 18:50 resources
 drwxr-xr-x  2 thinegen thinegen 4096 Mar 21 18:48 static
-~~~
+{{< /highlight >}}
 
 Diese Dateien werden nur angezeigt, wenn man sie explizit anzeigen lässt.
 
@@ -149,13 +151,13 @@ Online wird Befehlen manchmal ein Dollar-Zeichen (```$```) oder ein Doppelkreuz 
 
 Möchte man beispielsweise alle Dateien und Verzeichnisse mit Rechten ausgeben, lautet der Befehl:
 
-~~~
+{{< highlight Bash >}}
 Befehl
   |
 $ ls -l # Das hier ist ein Kommentar, der ignoriert wird.
       |
   Parameter
-~~~
+{{< /highlight >}}
 
 Um mehr über einen Befehl zu erfahren helfen die sogenannten Man-Pages, die man mit
 
@@ -164,7 +166,7 @@ aufrufen kann.
 
 ### Wichtige Befehle
 
-Die folgenden Befehle werden öfter gebraucht. Falls ein Befehl nicht zu Kommandozeile zurückkehrt, kann er meistens mit ```q``` beendet werden.
+Die folgenden Befehle werden öfter gebraucht. Falls ein Befehl nicht zu Kommandozeile zurückkehrt, kann er meistens mit **```q```** beendet werden.
 
 - **```cat```**: Ausgabe des Inhalts einer Datei
 - **```cd```**: Wechselt den aktuellen Ordner
