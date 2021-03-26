@@ -35,11 +35,8 @@
                 {
                     "@type": "ListItem",
                     "position": {{ .position }},
-                    "item": 
-                    {
-                        "item": "{{ .page.Permalink}}",
-                        "name": "{{ if .page.Params.BreadcrumbListName }}{{ .page.Params.BreadcrumbListName }}{{ else }}{{ .page.Title }}{{ end }}"
-                    }       
+                    "item": "{{ .page.Permalink}}",
+                    "name": "{{ if .page.Params.BreadcrumbListName }}{{ .page.Params.BreadcrumbListName }}{{ else }}{{ .page.Title }}{{ end }}"  
                 }
             {{- end -}}
         ]
