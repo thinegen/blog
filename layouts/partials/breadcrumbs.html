@@ -37,7 +37,7 @@
                     "position": {{ .position }},
                     "item": 
                     {
-                        "@id": "{{ .page.Permalink}}",
+                        "item": "{{ .page.Permalink}}",
                         "name": "{{ if .page.Params.BreadcrumbListName }}{{ .page.Params.BreadcrumbListName }}{{ else }}{{ .page.Title }}{{ end }}"
                     }       
                 }
