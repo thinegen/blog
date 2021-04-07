@@ -1,61 +1,13 @@
 sitemap: https://blog.thinegen.de/sitemap.xml
 
 User-agent: *
-
-
-
-
-
 Disallow: /de/datenschutz/
-
 Disallow: /en/privacy/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Disallow: /de/404/
-
 Disallow: /en/404/
-
-
-
-
-
 Disallow: /de/copyright/
-
 Disallow: /en/copyright/
-
 Disallow: /de/impressum/
-
 Disallow: /en/imprint/
-
-
-
-
-
 Disallow: /de/sitemap/
-
 Disallow: /en/sitemap/
