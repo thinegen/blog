@@ -1,6 +1,8 @@
 sitemap: https://blog.thinegen.de/sitemap.xml
 
 User-agent: *
+Disallow: /de/categories/
+Disallow: /en/categories/
 Disallow: /de/datenschutz/
 Disallow: /en/privacy/
 Disallow: /de/404/
